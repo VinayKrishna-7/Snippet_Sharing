@@ -1,0 +1,48 @@
+[
+  {
+    "_id": "local_1790625935622fftjl",
+    "shortId": "LVbbGg6",
+    "title": "hi",
+    "description": "",
+    "language": "javascript",
+    "code": "hii",
+    "tags": [],
+    "viewCount": 2,
+    "expiresAt": null,
+    "deleteToken": "df64ca9cada74323be219c3905d9956b773e57309316da22",
+    "createdAt": "2026-09-28T20:05:35.622Z",
+    "updatedAt": "2026-09-28T20:05:35.698Z"
+  },
+  {
+    "_id": "local_1790623732267llaro",
+    "shortId": "IWk9lii",
+    "title": "Hello",
+    "description": "Python code",
+    "language": "python",
+    "code": "# Python snippet\ndef quick_sort(arr):\n    if len(arr) <= 1:\n        return arr\n    pivot = arr[len(arr) // 2]\n    return [x for x in arr if x < pivot] + [x for x in arr if x == pivot] + [x for x in arr if x > pivot]\n",
+    "tags": [],
+    "viewCount": 11,
+    "expiresAt": "2026-09-28T20:28:52.267Z",
+    "deleteToken": "806f157dbc9bc8558b453ae591a9582d09b4ee840ecdc4c6",
+    "createdAt": "2026-09-28T19:28:52.267Z",
+    "updatedAt": "2026-09-28T19:40:05.028Z"
+  },
+  {
+    "_id": "local_179062352748863tda",
+    "shortId": "MPsHsIX",
+    "title": "Binary Search in TypeScript",
+    "description": "Standard binary search implementation",
+    "language": "typescript",
+    "code": "function binarySearch(arr: number[], target: number): number { let l = 0, r = arr.length - 1; while (l <= r) { const m = Math.floor((l + r) / 2); if (arr[m] === target) return m; if (arr[m] < target) l = m + 1; else r = m - 1; } return -1; }",
+    "tags": [
+      "typescript",
+      "algorithms",
+      "search"
+    ],
+    "viewCount": 2,
+    "expiresAt": null,
+    "deleteToken": "d9c3f434c108f61180ce4b0a7e65100579651a3708ec1459",
+    "createdAt": "2026-09-28T19:25:27.488Z",
+    "updatedAt": "2026-09-28T19:25:37.337Z"
+  }
+]

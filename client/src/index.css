@@ -1,0 +1,124 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+@layer base {
+  body {
+    @apply bg-slate-950 text-slate-100 font-sans;
+    background-image: 
+      radial-gradient(circle at 50% 0%, rgba(99, 102, 241, 0.08) 0%, transparent 50%),
+      radial-gradient(circle at 100% 100%, rgba(14, 165, 233, 0.05) 0%, transparent 40%);
+    background-attachment: fixed;
+  }
+}
+
+/* Custom Scrollbar for sleek developer look */
+::-webkit-scrollbar {
+  width: 8px;
+  height: 8px;
+}
+
+::-webkit-scrollbar-track {
+  background: #0f172a;
+}
+
+::-webkit-scrollbar-thumb {
+  background: #334155;
+  border-radius: 4px;
+}
+
+::-webkit-scrollbar-thumb:hover {
+  background: #475569;
+}
+
+/* Code block line numbers and styling */
+.code-container {
+  counter-reset: line;
+}
+
+.code-line {
+  display: block;
+  line-height: 1.6;
+}
+
+/* Monospace fonts for editor & preview */
+pre, code, .font-mono {
+  font-family: 'JetBrains Mono', 'Fira Code', Consolas, Monaco, monospace;
+}
+
+/* Monaco Editor Container Polish */
+.monaco-editor-wrapper {
+  border-radius: 0.5rem;
+  overflow: hidden;
+}
+
+/* Prism highlight theme defaults for dark mode */
+code[class*="language-"],
+pre[class*="language-"] {
+  color: #e2e8f0;
+  text-shadow: none;
+  font-family: 'JetBrains Mono', monospace;
+  direction: ltr;
+  text-align: left;
+  white-space: pre;
+  word-spacing: normal;
+  word-break: normal;
+  line-height: 1.6;
+  tab-size: 4;
+  hyphens: none;
+}
+
+.token.comment,
+.token.prolog,
+.token.doctype,
+.token.cdata {
+  color: #64748b;
+  font-style: italic;
+}
+
+.token.punctuation {
+  color: #94a3b8;
+}
+
+.token.property,
+.token.tag,
+.token.boolean,
+.token.number,
+.token.constant,
+.token.symbol {
+  color: #f43f5e;
+}
+
+.token.selector,
+.token.attr-name,
+.token.string,
+.token.char,
+.token.builtin {
+  color: #10b981;
+}
+
+.token.operator,
+.token.entity,
+.token.url,
+.language-css .token.string,
+.style .token.string {
+  color: #38bdf8;
+}
+
+.token.atrule,
+.token.attr-value,
+.token.keyword {
+  color: #818cf8;
+  font-weight: 500;
+}
+
+.token.function,
+.token.class-name {
+  color: #fbbf24;
+}
+
+.token.regex,
+.token.important,
+.token.variable {
+  color: #ec4899;
+}

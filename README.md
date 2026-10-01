@@ -1,6 +1,6 @@
 # SnipDrop ⚡
 
-> **Share code instantly. No account required.**
+> **Share code instantly.**
 
 SnipDrop is an anonymous, fast, developer-friendly code snippet sharing platform built on the **MERN stack** (MongoDB, Express, React, Node.js) with the **Monaco Editor** and **Tailwind CSS**.
 
@@ -69,17 +69,6 @@ npm run dev
 
 ---
 
-## 📡 API Endpoints
-
-| Method | Endpoint | Description |
-| :--- | :--- | :--- |
-| `POST` | `/api/snippets` | Create a new snippet |
-| `GET` | `/api/snippets/:id` | Get snippet by short ID (increments views) |
-| `GET` | `/api/snippets` | Browse snippets (search, filter, pagination) |
-| `DELETE` | `/api/snippets/:id` | Delete snippet (requires `deleteToken`) |
-| `GET` | `/api/health` | Service health status |
-
----
 
 ## 🌐 Deployment
 
@@ -87,8 +76,3 @@ npm run dev
 - **Backend**: Deploy the `server` folder to **Render** or **Railway** (`Start: node server.js`).
 - Set `VITE_API_URL` on the frontend pointing to your deployed backend URL.
 
----
-
-## 📄 License
-
-MIT License — free for personal and commercial projects.
